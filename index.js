@@ -1,3 +1,7 @@
+import { sum } from "./m2.js"; 
+console.log( sum(1,2) ); 
+
+
 //const fn = require("./m1");
 //const {example} = require("./m1");
 //const {a : { FirstName }} = fn;
@@ -10,7 +14,3 @@
 //console.log(fn)
 
 // my previous failed tries ;)
-
-const {a: { b }} = require('./m1');
-
-console.log(b)
