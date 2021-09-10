@@ -1,22 +1,37 @@
-{
-console.log("DESTRUCTURING OF ARRAY ------------------------------------------------------------------------")
-// destructuring of array
+let Form = document.querySelector('#form');
 
- const dataArr = ['John', 'Rambo', 69, "New York"];
+let Fname = document.querySelector('#fname');
+let Sname = document.querySelector('#lname');
+let Age = document.querySelector('#age');
+let City = document.querySelector('#city');
 
-let [firstName, surname, age, city,Non] = dataArr;
+let OFname = document.querySelector('#OutputFirstName');
+let OLname = document.querySelector('#OutputLastName');
+let OFa = document.querySelector('#OutputAge');
+let OFc = document.querySelector('#OutputCity');
 
-// change of 'city' value
-
-city = "Chicago"; 
-
-// checking 
-
-console.log(`My name is ${firstName} ${surname}. I am ${age} old and live in ${city}.`);
-}
+let Err = document.querySelector('#error');
 
 
-// Usage example
+Form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    //window.history.back();
+    let dataArr = [Fname.value, Sname.value, Age.value, City.value];
+    let [destructuring, Of, Arrays, is,Fun] = dataArr;
+    [destructuring, Of, Arrays, is] = [is, destructuring, Of, Arrays] // who did that ?????
+    //console.log(Fname);
+    OFname.innerText = destructuring;
+    //console.log(Sname);
+    OLname.innerText = Of;
+    //console.log(Age);
+    OFa.innerText = Arrays;
+    //console.log(City);
+    OFc.innerText = is;
+    Err.innerText = "SORRY SOMETHING WENT WRONG. CHECK THE CODE TO FIND OUT WHAT HAPPENED"
+  }, true);
+
+
+// bonus usage example
 
 {
 function dA(none){
