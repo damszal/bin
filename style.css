@@ -12,12 +12,16 @@ body{
 }
 
 form{
-    max-width: 80vw;
-    min-width: 50vw;
+    width: 350px;
+    min-width: 300px;
+    
 }
+fieldset{
 
+}
 legend{
-    margin: auto
+    margin: auto;
+
 }
 
 label{
@@ -35,6 +39,7 @@ input{
     display: block;
     margin: 1rem;
     padding: 0.25rem;
+    
 }
 .submit {
     width: 100%;
