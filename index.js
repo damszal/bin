@@ -42,8 +42,16 @@ let flatNumber = document.querySelector('#flatNumber');
 let telNumber = document.querySelector('#telNumber');
 let eMail = document.querySelector('#eMail');
 
+let address = document.querySelector('#address');
 
 
 
-
-
+address.addEventListener("submit", function(e) {
+    e.preventDefault();
+    console.log(valFName.test(FName.value))
+    let err = document.createElement('h1');
+    err.innerText = "Uppss something went wrong, probably with speling. Luckily I set validation only on first input. ;)"
+    if (valFName.test(FName.value) === false) {
+        console.log(address.style.backgroundColor = "red") || (address.appendChild(err))
+    }
+});
