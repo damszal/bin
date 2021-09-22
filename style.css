@@ -1,0 +1,45 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(138deg, rgba(0,0,0,1) 0%, rgba(51,77,78,1) 41%, rgba(32,65,66,1) 59%, rgba(61,54,71,1) 100%); 
+}
+
+h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    padding: 1rem 1rem 2rem 1rem;
+    color: white;
+}
+
+.root{
+    border: 0.01rem solid #1a9299;
+    border-radius: 5%;
+    background: #115f54;
+}
+
+p{
+    padding: 1rem;
+}
+
+.form,label{
+    padding: 1rem 1rem 1rem 1rem;
+}
+input{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    background-color: aquamarine;
+    border-radius: 5px;
+    border: 0.1rem solid black 
+}

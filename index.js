@@ -27,7 +27,7 @@ Form.addEventListener("submit", function(e) {
     OFa.innerText = Arrays;
     //console.log(City);
     OFc.innerText = is;
-    Err.innerText = "SORRY SOMETHING WENT WRONG. CHECK THE CODE TO FIND OUT WHAT HAPPENED"
+    Err.innerText = "SORRY SOMETHING WENT WRONG. \n CHECK THE CODE TO FIND OUT WHAT HAPPENED"
   }, true);
 
 
