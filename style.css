@@ -1,72 +1,97 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.container{
-    border: 5px solid black;
-    position: relative;
-    height: 200px;
-    top: 100px;
+
+nav{
+    background-color: orange;
+    width: 100vw;
+    height: 15vh;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
- /* top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;*/
+    color: blue;
 }
 
-.box1, .box2, .box3{
+nav:nth-child(1n){
+
+}
+
+nav:nth-child(2n){
+    
+}
+
+.b1, .b2, .b3, .bH {
     position: absolute;
-    height: 100px;
-    width: 100px;
+    height: 85vh;
+    width: 100vw;
+    top: 15vh;
+}
+.b1{
+    z-index: 00;
+    background-color: red;
+    visibility: hidden;
 }
 
-.box1{
-    background-color: aquamarine;
-    z-index: 100;
-    margin-left: -100px ;
+.b2{
+    z-index: 0;
+    background-color: green;
+    visibility: hidden;
+}
+.b3{
+    z-index: 0;
+    background-color: blue;
+    visibility: hidden;
+}
+.bH{
+    background-color: pink;
+    color: green;
+
+}
+
+.bHidden{
+    float: left;
 }
 
 .box2{
-    background-color: red;
-    z-index: 200;
-    margin-left: -50px;
+    padding-left: 1rem;
 }
 
-.box2:hover{
-    height: 200px;
-    width: 200px;
-    z-index: 400;
-}
-
-.box2:hover + .box3 {
-    height: 1000px;
-    width: 500px;
-}
 .box3{
-    background-color: black;
-    z-index: 300;
+    padding-left: 1rem;
 }
 
-.box3::before{
-    content: "1";
-    background-color: gray;
-    position: absolute;
-    width:50px;
-    height:50px;
-    left: 75px;
-    top: 25px;
+nav .box1:hover + .b1{
+    color: green;
+    z-index: 200;
+    background-color: burlywood;
+    visibility: inherit;
 }
 
-.box3::after{
-    content: "2";
-    background-color: rgb(9, 255, 0);
-    position: absolute;
-    width:50px;
-    height:50px;
-    left: 0px;
-    top: 0px;
-    z-index: 300;
+nav .box2:hover + .b2{
+    color: green;
+    z-index: 200;
+    background-color: burlywood;
+    visibility: inherit;
+}
+
+nav .box3:hover + .b3{
+    color: green;
+    z-index: 200;
+    background-color: burlywood;
+    visibility: inherit;
+}
+
+nav .bHidden:hover + .bH{
+    color: green;
+    z-index: 200;
+    background-color: pink;
+}
+.b1:hover, .b2:hover, .b3:hover, .bH:hover{
+    color: green;
+    z-index: 200;
+    background-color: pink;
 }
