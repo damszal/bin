@@ -11,13 +11,26 @@
 --input-color: #FFEE99;
 }
 
-body{
+.navbar{
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    background-color: var(--bg-sec-color);
+    border-bottom: 2px solid var(--border-color);
+
+}
+.manu {
+    margin-left: auto;
+
+}
+
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background: var(--bg-color);
-    
+    padding-top: 4rem;
 }
 
 h1 {
@@ -32,6 +45,8 @@ h1 {
     border-radius: 5%;
     background: var(--bg-sec-color);
     box-shadow: 0.5rem 0.5rem;
+    margin-top: 2rem;
+    
 }
 
 p{
