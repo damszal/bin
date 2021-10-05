@@ -32,9 +32,11 @@ html{
     display: flex;
 }
 
-.navbar-icon img {
-    height: 3.5rem;
-    padding-left: 2rem;
+.nav-img{
+    background-image: url(./unicorn.png);
+    background-size: 4rem 4rem;
+    height: 4rem;
+    width: 4rem;
 }
 
 .navbar-icon p {
@@ -89,5 +91,17 @@ input{
 
 @media screen and (min-width: 992px) {}
 @media only screen and (min-width: 768px) {}
-@media screen and (min-width: 576px) {}
+@media screen and (max-width: 576px) {
+    .navbar-icon{
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-img{
+        background-image: url(./unicorn.png);
+        background-size: 3rem 3rem;
+        height: 3rem;
+        width: 3rem;
+    }
+
 @media screen and (min-width: 1200px) {}
