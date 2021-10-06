@@ -24,9 +24,23 @@
         </div>
     </nav>
     <div class="container">
-        <div class="user-card skeleton">
-            
-        </div>
+    <div class="main" id="root" class="form">
+        <h1>DESTRUCTURING </h1>
+        <p>Type random data to see gaps changes</p>
+        <form action="" id="form">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="age">Age:</label><br>
+            <input type="text" id="age" name="age"><br>
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city"><br>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+        <p id="o1">My name is <span id="OutputFirstName">.....</span> <span id="OutputLastName">.......</span>. I am <span id="OutputAge">.....</span> old and live in <span id="OutputCity">.......</span>.</p>
+        <p id="error"></p>
+    </div>
     </div>
     </script>
     <script src="index.js"></script>

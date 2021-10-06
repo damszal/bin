@@ -55,10 +55,28 @@ html{
 
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--bg-color);
+    padding-top: 4rem;
+}
+
 h1 {
     font-size: 3.2rem;
     padding: 1rem 1rem 2rem 1rem;
     color: white;
+}
+
+.main{
+    border: 0.01rem solid var(--border-color);
+    border-radius: 5%;
+    background: var(--bg-sec-color);
+    box-shadow: 0.5rem 0.5rem;
+    margin-top: 2rem;
+    
 }
 
 p{
@@ -69,38 +87,22 @@ p{
     text-transform: capitalize;
 }
 
-
+.form,label{
+    padding: 1rem 1rem 1rem 1rem;
+}
+input{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    background-color: var(--input-color);
+    border-radius: 5px;
+    border: 0.1rem solid var(--border-color) 
+}
 
 @media screen and (min-width: 992px) {}
 @media only screen and (min-width: 768px) {}
 @media screen and (max-width: 576px) {
-    .container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        background-color: var(--bg-color);
-    }
-    
-    .user-card {
-        width: 65vw;
-        height: 60vh;
-        box-shadow: -10px 5px 20px rgba(0, 0, 0, 0.3);
-        border-radius: 15px;
-        overflow: hidden;
-        background: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        transition: box-shadow 0.2s ease-in;
-        cursor: pointer;
-        margin-top: 10vh;
-      }
-    
-      .user-card:hover {
-        box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.4);
-      }
     .navbar{
         position: fixed;
         display: flex;
